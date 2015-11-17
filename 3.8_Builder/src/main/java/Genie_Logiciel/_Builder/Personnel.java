@@ -3,7 +3,7 @@ package Genie_Logiciel._Builder;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Personnel {
+public class Personnel implements Element{
 	
 	private final String nom ;
 	private final String prenom ;
@@ -11,6 +11,10 @@ public class Personnel {
 	private final ArrayList<Long> numero;
 	
 	
+	public void affiche()
+	{
+		System.out.println(nom) ;
+	}
 	
 	public static class Builder{
 

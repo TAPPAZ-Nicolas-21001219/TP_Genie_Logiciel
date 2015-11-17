@@ -1,20 +1,23 @@
 package Genie_Logiciel._Builder;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Groupe implements Element{
 
-	public ArrayList<Element> list ;
+	public ArrayList<Element> listeElements ;
+	public String nom ;
 	
+
 	public void affiche()
 	{
-		Iterator monIte = list.iterator() ;
+		Iterator<Element> monIte = listeElements.iterator() ;
+		
 		while(monIte.hasNext())
 		{
+			Element groupeCourant = monIte.next() ;
 			
-			System.out.println(monIte.next()) ;
+			groupeCourant.affiche();
 		}
 		
 	}
