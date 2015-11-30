@@ -22,7 +22,9 @@ public class Groupe implements Element{
 		
 	}
 	
-	Groupe(){
+Groupe(String nom, ArrayList listeElements){
 		
+		this.nom = nom ;
+		this.listeElements = new ArrayList(listeElements) ;
 	}
 }
